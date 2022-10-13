@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Car</title>
+    <link rel="stylesheet" href="./Styles/ad.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="">Masai Car</a></div>
+        <ul>
+            <li><a href="#">Ad</a></li>
+            <li><a href="./cars.html">Cars</a></li>
+            <li><a href="./wishlist.html">Wishlist</a></li>
+        </ul>
+    </nav>
+
+    <form onsubmit="handleform(event)">
+        <div class="heading">
+            <h1>Create Ads</h1>
+        </div>
+        <div>
+            <label for="brand">Brand</label>
+            <select name="" id="Brand">
+                <option value="" selected="true" disabled="disabled">Type Brand</option>
+                <option value="Tata">Tata</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Kia">Kia</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">Type</label>
+            <select name="" id="Type" >
+                <option value="Type" selected="true" disabled="disabled">Enter Type</option>
+                <option value="Manual">Manual</option>
+                <option value="Automated">Automated</option>
+            </select>
+        </div>
+        <div>
+            <label for="Year_of_purchase">Year_of_purchase</label>
+            <select name="" id="Year_of_purchase" >
+               <option value="" selected="true" disabled="disabled">Year_of_purchase</option>
+               <option value="2017">2017</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+               <option value="2022">2022</option>
+        </select>
+      </div>
+      <div>
+        <label for="km">KM driven</label>
+        <input type="number" id="km">
+      </div>
+      <div>
+        <label for="Description">Description</label>
+        <input type="text" id="Description">
+      </div>
+      <div>
+        <label for="Price">Price</label>
+        <input type="number" id="Price">
+      </div>
+      <input type="submit">
+    </form>
+
+     <!-- otp part -->
+      <div class="model_main">
+           <h1>Enter OTP</h1>
+           <div class="model">
+               <div><input type="text" maxlength="1" id="input_1"></div>
+               <div><input type="text" maxlength="1" id="input_2"></div>
+               <div><input type="text" maxlength="1" id="input_3"></div>
+               <div><input type="text" maxlength="1" id="input_4"></div>
+           </div>
+           <button onclick="otpSubmit()">Submit</button>
+      </div>
+
+</body>
+</html>
+<script src="./Scripts/ad.js"></script>
